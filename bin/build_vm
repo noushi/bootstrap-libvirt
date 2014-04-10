@@ -1,0 +1,1 @@
+sudo vmbuilder kvm ubuntu --suite precise --flavour virtual --arch amd64 -o --libvirt qemu+ssh:///system
