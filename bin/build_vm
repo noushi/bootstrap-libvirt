@@ -2,4 +2,4 @@ UBUNTU_VERSION=precise
 HOSTNAME=ubuntu
 ARCH=amd64
 
-sudo vmbuilder kvm ubuntu --suite $UBUNTU_VERSION --flavour virtual --arch $ARCH -o --libvirt qemu:///system --hostname $HOSTNAME
+sudo vmbuilder kvm ubuntu --tmpfs - --suite $UBUNTU_VERSION --flavour virtual --arch $ARCH -o --libvirt qemu:///system --hostname $HOSTNAME
