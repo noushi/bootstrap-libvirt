@@ -1,1 +1,5 @@
-sudo vmbuilder kvm ubuntu --suite precise --flavour virtual --arch amd64 -o --libvirt qemu+ssh:///system
+UBUNTU_VERSION=precise
+HOSTNAME=ubuntu
+ARCH=amd64
+
+sudo vmbuilder kvm ubuntu --suite $UBUNTU_VERSION --flavour virtual --arch $ARCH -o --libvirt qemu:///system --hostname $HOSTNAME
