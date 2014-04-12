@@ -1,0 +1,7 @@
+#!/bin/bash
+
+. config
+
+QCOW=$( find ubuntu-kvm/ -name "*.qcow2" | head -1 )
+
+sudo virt-install --name $HOSTNAME --ram $RAM --disk $QCOW  --boot hd
