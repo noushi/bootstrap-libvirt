@@ -2,4 +2,4 @@
 
 . config
 
-sudo vmbuilder kvm ubuntu --tmpfs - --suite $UBUNTU_VERSION --flavour virtual --arch $ARCH -o --libvirt qemu:///system --hostname $HOSTNAME
+sudo vmbuilder kvm ubuntu --tmpfs - --suite $UBUNTU_VERSION --flavour virtual --arch $ARCH -o --libvirt qemu:///system --hostname $HOSTNAME --addpkg acpid 
