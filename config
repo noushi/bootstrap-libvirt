@@ -1,0 +1,6 @@
+#!/bin/sh
+
+UBUNTU_VERSION=precise
+HOSTNAME=ubuntu
+ARCH=amd64
+RAM=128
