@@ -1,3 +1,4 @@
 class { '::libvirt':
-  mdns_adv => false
+  mdns_adv => false,
+  defaultnetwork     => true,
 }
