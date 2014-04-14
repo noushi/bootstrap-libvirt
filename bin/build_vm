@@ -1,5 +1,11 @@
 #!/bin/bash
+set -x
 
 . config
 
-sudo vmbuilder kvm ubuntu --tmpfs - --suite $UBUNTU_VERSION --flavour virtual --arch $ARCH -o --libvirt qemu:///system --hostname $HOSTNAME --addpkg acpid --addpkg openssh-server 
+ADD_PKGS="--addpkg acpid --addpkg openssh-server"
+TMPFS="--tmpfs -"
+
+# -o --libvirt qemu:///system 
+
+sudo vmbuilder kvm ubuntu $TMPFS --suite $UBUNTU_VERSION --flavour virtual --arch $ARCH --hostname $HOSTNAME  --mirror=$MIRROR $ADD_PKGS
