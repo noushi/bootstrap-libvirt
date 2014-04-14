@@ -2,6 +2,7 @@
 
 . config
 
-QCOW=$( find ubuntu-kvm/ -name "*.qcow2" | head -1 )
+VM_FORMAT=qcow2
+VM_FILE=$( find ubuntu-kvm/ -name "*.$VM_FORMAT" | head -1 )
 
-sudo virt-install --name $HOSTNAME --ram $RAM --disk $QCOW  --boot hd
+sudo virt-install --name $HOSTNAME --ram $RAM --disk path=$VM_FILE,format=$VM_FORMAT  --boot hd
