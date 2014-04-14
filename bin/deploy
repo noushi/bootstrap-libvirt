@@ -1,1 +1,3 @@
-sudo puppet apply --verbose  --parser future --modulepath ./modules --manifestdir ./manifests --detailed-exitcodes ./manifests/libvirt.pp
+#!/bin/sh
+
+sudo puppet apply --verbose  --parser future --modulepath ./modules --manifestdir ./manifests --detailed-exitcodes ./manifests/libvirt-env.pp "$@"
