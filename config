@@ -4,3 +4,6 @@ UBUNTU_VERSION=precise
 HOSTNAME=ubuntu
 ARCH=amd64
 RAM=128
+
+# 192.168.122.1 is the default bridge address of the host in the thias/libvirt config
+MIRROR=http://192.168.122.1:9999/ubuntu
