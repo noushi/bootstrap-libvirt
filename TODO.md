@@ -1,5 +1,6 @@
 # TODO
 
-- [ ] Configure VM networking
+- [ ] Add tests for the project
+- [X] Configure VM networking
 - [ ] Automate bootstrap (make or rake)
-- [ ] Add a README.md
+- [X] Add a README.md
